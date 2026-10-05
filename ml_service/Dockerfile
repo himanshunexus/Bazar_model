@@ -15,6 +15,7 @@ RUN pip install -r requirements.txt
 # Run as an unprivileged user
 RUN useradd --create-home --uid 1000 appuser
 COPY --chown=appuser:appuser . .
+RUN mkdir -p model && chown -R appuser:appuser /app
 USER appuser
 
 # Bake the model into the image. If you COPY a model/ folder trained on real data,
