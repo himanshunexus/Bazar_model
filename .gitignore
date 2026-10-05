@@ -1,0 +1,6 @@
+ml_service/.venv/
+ml_service/__pycache__/
+__pycache__/
+orders.csv
+ml_service/orders.csv
+ml_service/model/
